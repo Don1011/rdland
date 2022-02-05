@@ -1,0 +1,193 @@
+.justify-centre{
+  justify-content: center;
+}
+.center-container{
+  margin: 0 auto;
+  width: 80%;
+  @include respond(tabPort){
+    width: 100%;
+  }
+}
+.flexDR{
+  flex-direction: row;
+}
+.flexDC{
+  flex-direction: column;
+}
+.create-container{
+  margin: 0 auto;
+  width: 90%;
+  @include respond(tabPort){
+    width: 90%;
+  }
+}
+.mgT8{
+  margin-top: 8rem;
+}
+.center-container-60{
+  margin: 0 auto;
+  width: 60%;
+  @include respond(tabPort){
+    width: 100%;
+  }
+}
+.center-container-form{
+  margin: 0 auto;
+  width: 60%;
+  min-height: 50vh;
+  @include respond(tabPort){
+    width: 100%;
+  }
+}
+.pdh2{
+  padding: 0 2rem;
+}
+.mgh2{
+  margin:0 2rem;
+}
+.mg2{
+  margin: 2rem;
+}
+.mgL4{
+  margin-left: 4rem;
+}
+.mgR4{
+  margin-left: 4rem;
+}
+.mgh1{
+
+  margin: 0 1rem;
+}
+.mg1{
+
+  margin: 1rem;
+}
+.mgv4{
+  margin: 4rem 0;
+}
+.pdv4{
+  padding: 4rem 0;
+}
+.flex1{
+  flex: 1;
+}
+.mgB2{
+  margin-bottom: 2rem;
+}
+.mgT1-2{
+  margin-top: .5rem;
+}.mgT1{
+  margin-top: 1rem;
+}
+ .mgV1{
+   margin: 1rem 0;
+ }
+.mgb1{
+  margin-bottom: 1rem;
+}
+.mgT4{
+  margin-top: 4rem;
+}
+.mL1{
+  margin-left: 1rem;
+}
+.mgL2{
+  margin-left: 2rem;
+}
+.mgL24{
+  margin-left: 2.4rem;
+}
+.mgv2{
+  margin: 2rem 0;
+}
+.mgT2{
+  margin-top: 2rem;
+}
+.mgT4{
+  margin-top: 4rem;
+}
+.width-70{
+  width: 70%;
+
+  @include respond(tabPort){
+    width: 90%;
+  }
+  @include respond(phone){
+    width: 100%;
+  }
+}
+.width-60{
+  width: 60%;
+
+  @include respond(tabPort){
+    width: 90%;
+  }
+  @include respond(phone){
+    width: 100%;
+  }
+}
+
+.width-55{
+  width: 55%;
+
+  @include respond(tabPort){
+    width: 90%;
+  }
+  @include respond(phone){
+    width: 100%;
+  }
+}
+.width-50{
+  width: 50%;
+  @include respond(phone){
+    width: 100%;
+  }
+}
+.width-60{
+  width: 60%;
+  @include respond(phone){
+    width: 100%;
+  }
+}
+.width-40{
+  width: 40%;
+  @include respond(tabLand) {
+    width: 80%;
+  }
+  @include respond(phone){
+    width: 100%;
+  }
+}
+.width-45{
+  width: 45%;
+  @include respond(tabLand) {
+    width: 80%;
+  }
+  @include respond(phone){
+    width: 100%;
+  }
+}
+.sticky{
+  height: 100%;
+  top: 10rem;
+  position: -webkit-sticky;
+  position: sticky;
+}
+.sticky-search{
+  height: 100%;
+  top: 10rem;
+  position: -webkit-sticky;
+  position: sticky;
+  @include respond(tabPort){
+    position: unset;
+  }
+}
+.sticky-desk{
+  height: 100%;
+  top: 12rem;
+  position: -webkit-sticky;
+  position: sticky;
+  @include respond(tabPort){
+    position: unset;
+  }
+}

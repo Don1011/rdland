@@ -1,0 +1,165 @@
+.h1{
+  font-size: 7.2rem;
+}
+.h2{
+  font-size: 6.4rem;
+}
+.h3{
+  font-size: 4.8rem;
+}
+.h4{
+  font-size: 3.6rem;
+}
+.h5{
+  font-size: 2.4rem;
+}
+.h6{
+  font-size: 1.8rem;
+}
+.h7{
+  font-size: 1.6rem;
+}
+.h8{
+  font-size: 1.4rem;
+}
+.h9{
+  font-size: 1.2rem;
+}
+.post-h{
+  font-size: 3.6rem;
+  @include respond(phone){
+    font-size: 2.8rem;
+  }
+}
+.greyText{
+  color: #b3b3b3;
+}
+.greyText2{
+
+  color: #f7f7f7;
+}
+.text_left{
+  text-align: left;
+  align-self: flex-start;
+}
+.yellowText{
+  color: #ff9a00;
+}
+.bold{
+  font-weight: bold;
+}
+.link_article{
+  font-size: 1.5rem;
+  color: #0a9cdd;
+}
+.list_od{
+  list-style: none;
+  color: #262626;
+  li{
+    font-size: 1.8rem;
+    margin: 1.8rem 0;
+  }
+}
+.text_right{
+  text-align: right;
+}
+.no-deco{
+  text-decoration: none;
+}
+.orangeText{
+  color: #473e2f;
+}
+.whiteText{
+  color: white;
+}
+.subtitle1{
+  font-size: 1.4rem;
+}
+.hashEm{
+  background-color: #ffeec4;
+  color: #eea507;
+  display: inline-block;
+  font-size: 1.6rem;
+  padding: .5rem;
+  margin: 0 .5rem ;
+}
+.shadowText{
+  text-shadow: 0 2px 40px rgba(0,0,0,.8);
+}
+
+.success{
+  color: #29e55f;
+}
+.danger{
+  color: #f62b54;
+}
+
+.display_block{
+  display: block;
+}
+
+.black{
+  color: #35495e;
+}
+
+.overflowText{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 15rem;
+  white-space: nowrap;
+  @include respond(tabPort){
+    max-width: 10.5rem;
+  }
+}
+h1,h2,h3,h4,h5,h6,p{
+  color: white;
+}
+
+.fine--header{
+  font-size: 2.8rem;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  z-index: 1;
+  &::before{
+    position: absolute;
+    border-radius: 2rem;
+    content: ' ';
+    width: 60%;
+    height: .8rem;
+    background-color: #00FFFF;
+    bottom: -1rem;
+    //z-index: 2;
+    @include respond(tabPort){
+      width: 25%;
+    }
+  }
+}
+
+.footer--list{
+  list-style: none;
+  margin-top: 2rem;
+  color: var(--white);
+  li{
+    font-size: 1.6rem;
+    margin: 1.5rem 0;
+
+    font-family: 'Roboto', sans-serif;
+  }
+}
+.company{
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+.smSocial{
+  font-size: 3.2rem;
+  margin: 0 .5rem;
+}
+.Toastify__toast-body {
+  font-size: 1.6rem;
+  padding: 1.2rem;
+}
+.toUpper{
+  text-transform: uppercase;
+}

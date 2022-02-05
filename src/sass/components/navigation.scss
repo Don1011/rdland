@@ -1,0 +1,119 @@
+#rdMenu{
+  display: none;
+}
+#rdMenu:checked ~ .topNav-list{
+  display: flex;
+}
+#rdMenu:checked ~ .menu{
+  background-color: #B220D8;
+  transform: translate3d(2px, -2px, -15px);
+  .menu-bars{
+    &{
+      background-color: transparent;
+    }
+    &:before{
+      transform: rotate(45deg) scale(1.2);
+    }
+    &:after{
+      transform: rotate(-45deg) scale(1.2);
+    }
+  }
+}
+.menu{
+  display: none;
+  padding: 1.5rem;
+  border-radius: .5rem;
+  //background-color: #1f2937;
+  transition: all .35s ease;
+  position: relative;
+  width: 3.5rem;
+  @include respond(tabPort){
+    display: block;
+    z-index: 10;
+    padding: 1rem;
+    position: fixed;
+    top: 3.5rem;
+    right: 3.5rem;
+    .menu-bars{
+      width: 100%;
+      transform: translate(50%);
+      &:after,&:before{
+        position: absolute;
+        background-color: #00FFFF;
+        width: 100%;
+        height: .4rem;
+        //padding: .5rem;
+        border-radius: 20rem;
+        transition: all .45s cubic-bezier(1,.2,.8,1);
+
+      }
+      &:after,&:before{
+        content: " ";
+
+      }
+      &:before{
+        top: -1rem;
+      }
+      &:after{
+        top: 1rem;
+      }
+    }
+  }
+}
+
+//#menu:checked ~ .menu > .menu-bars:after{
+//  transform: rotate(-45deg)translateY(-1rem);
+//}
+.topNav{
+  display: flex;
+  background-color: var(--bg);
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5rem;
+
+   .logo{
+     height: 6rem;
+   }
+
+  &-list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    &-item{
+      margin: 0 2rem;
+      &-link{
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: white;
+      }
+  }
+    @include respond(tabPort){
+      display: none;
+      padding: 2.5rem;
+      position: fixed;
+      flex-direction: column;
+      background-color: black;
+      top: 0;
+      height: 100vh;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: 5;
+      &-item{
+        width: 90%;
+        &-link{
+          padding: 1rem;
+          text-align: left;
+          background-color: #1f2937;
+          width: 100%;
+          font-size: 1.8rem;
+          display: inline-block;
+          border-radius: .5rem;
+
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,53 @@
+@mixin respond($bre){
+  @if($bre==minPhone){
+    @media screen and (max-width:20em) {
+      @content
+    }
+  }
+  @if($bre==smPhone){
+    @media screen and (max-width:23.438em) {
+      @content
+    }
+  }
+  @if($bre==phone){
+    @media screen and (max-width:37.5em) {
+      @content
+    }
+  }
+  @if($bre==tabPort){
+    @media screen and (max-width:56.5em) {
+      @content
+    }
+  }
+  @if($bre==tabLand){
+    @media screen and (max-width:75em) {
+      @content
+    }
+  }
+  @if($bre==bigScreen){
+    @media screen and (min-width:112.5em) {
+      @content
+    }
+  }
+}
+
+
+%scrollbars{
+  &::-webkit-scrollbar{
+    width: 1em;
+
+  }
+  &::-webkit-scrollbar-track {
+    //box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #f7f7f7;
+    padding: 5rem;
+    border-radius: 2rem;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #303030;
+    outline: none;
+    border-radius: 2rem;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width:none;
+}
