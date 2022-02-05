@@ -44,7 +44,7 @@ const AuthForm = () => {
     const validateReqToken = React.useCallback(()=>{
         const pathName = location.pathname;
         console.log(pathName)
-        axiosInstance.get(`users/${pathName}`).then(res=>{
+        axiosInstance.get(`users${pathName}`).then(res=>{
             console.log(res)
             if (res.data.r.active===true){
                 setDisplayError(true);
@@ -84,7 +84,7 @@ setDisplayError(true)
                      <input type={'password'}  {...register('retypePass',{required:true,minLength:8})}  className="form--input" placeholder='Confirm Password'/>
                  </div>
                  {errors.retypePass?.type==='required'?<p className={'danger h6'}> Required</p>:null}
-                 <button className="borderedBtn borderedBtn-dark mgT2">GO</button>
+                 <button type = "submit" role = "submit" className="borderedBtn borderedBtn-dark mgT2">GO</button>
              </form>
          </div>
      }

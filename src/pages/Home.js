@@ -11,7 +11,7 @@ const Home = () => {
 
     function addToMailing(data) {
 
-        AxiosInstance.post('https://53f0-41-242-52-81.ngrok.io/api/users/addToMailing', data)
+        AxiosInstance.post('https://7b24-41-242-52-81.ngrok.io/api/users/addToMailing', data)
             .then((res) => {
                 toast('YOU’RE ON THE WAITING LIST!WE’LL SEND YOU A CODE NEXT TIME. KEEP UP WITH US FOR FUTURE EVENTS.');
 
